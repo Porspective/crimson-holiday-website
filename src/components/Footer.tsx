@@ -14,9 +14,9 @@ const Footer = () => {
               Premium holiday lighting services for Norman, Moore, and Oklahoma City. Professional installation, custom designs, and full-service care.
             </p>
             <div className="flex flex-col space-y-2 text-background/80">
-              <a href="tel:" className="flex items-center hover:text-gold transition-colors">
+              <a href="tel:+14052935872" className="flex items-center hover:text-gold transition-colors">
                 <Phone size={18} className="mr-2" />
-                Contact for phone
+                (405) 293-5872
               </a>
               <a href="mailto:porter.j.robertson@gmail.com" className="flex items-center hover:text-gold transition-colors">
                 <Mail size={18} className="mr-2" />
