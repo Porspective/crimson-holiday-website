@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { CheckCircle, Sparkles, Calendar, Package } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -122,8 +122,173 @@ const Home = () => {
         </div>
       </section>
 
-      {/* How It Works Section */}
+      {/* Packages Section */}
       <section className="py-24 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-foreground">
+              Our <span className="text-primary">Premium Packages</span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Choose the perfect lighting experience for your home
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+            {/* Starter Package */}
+            <Card className="relative border-2 border-primary shadow-elegant hover:shadow-luxury transition-all duration-300">
+              <CardHeader className="text-center pb-4">
+                <div className="text-6xl mb-4">🎄</div>
+                <h3 className="text-3xl font-serif mb-2">Starter Package</h3>
+                <p className="text-base text-muted-foreground">
+                  A clean, elegant roofline display for homeowners who prefer a timeless, architectural holiday look.
+                </p>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-3 mb-8">
+                  <div className="flex items-start">
+                    <CheckCircle className="text-primary mr-3 mt-1 flex-shrink-0" size={20} />
+                    <span className="text-muted-foreground">Front roofline lighting only</span>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="text-primary mr-3 mt-1 flex-shrink-0" size={20} />
+                    <span className="text-muted-foreground">Premium commercial-grade LED C9 bulbs</span>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="text-primary mr-3 mt-1 flex-shrink-0" size={20} />
+                    <span className="text-muted-foreground">Custom cut-to-fit installation</span>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="text-primary mr-3 mt-1 flex-shrink-0" size={20} />
+                    <span className="text-muted-foreground">Professional installation & storage</span>
+                  </div>
+                </div>
+                <Link to="/quote">
+                  <Button className="w-full bg-primary hover:bg-primary-light text-primary-foreground shadow-elegant">
+                    Request This Package
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+
+            {/* Signature Package */}
+            <Card className="relative border-2 border-gold shadow-luxury transform lg:scale-105 hover:shadow-luxury transition-all duration-300">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <span className="bg-gold text-foreground px-6 py-2 rounded-full text-sm font-semibold shadow-elegant">
+                  Most Popular
+                </span>
+              </div>
+              <CardHeader className="text-center pb-4">
+                <div className="text-6xl mb-4">⭐</div>
+                <h3 className="text-3xl font-serif mb-2">Signature Package</h3>
+                <p className="text-base text-muted-foreground">
+                  Our most popular package—balanced, curated, and designed to enhance your home from multiple viewing angles.
+                </p>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-3 mb-8">
+                  <div className="flex items-start">
+                    <CheckCircle className="text-primary mr-3 mt-1 flex-shrink-0" size={20} />
+                    <span className="text-muted-foreground">Front + side roofline lighting</span>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="text-primary mr-3 mt-1 flex-shrink-0" size={20} />
+                    <span className="text-muted-foreground">Premium commercial-grade LED C9 bulbs</span>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="text-primary mr-3 mt-1 flex-shrink-0" size={20} />
+                    <span className="text-muted-foreground">Professionally lit front bushes/landscaping</span>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="text-primary mr-3 mt-1 flex-shrink-0" size={20} />
+                    <span className="text-muted-foreground">Optional premium wreath</span>
+                  </div>
+                </div>
+                <Link to="/quote">
+                  <Button className="w-full bg-primary hover:bg-primary-light text-primary-foreground shadow-elegant">
+                    Request This Package
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+
+            {/* Showstopper Package */}
+            <Card className="relative border-2 border-primary shadow-elegant hover:shadow-luxury transition-all duration-300">
+              <CardHeader className="text-center pb-4">
+                <div className="text-6xl mb-4">🌟</div>
+                <h3 className="text-3xl font-serif mb-2">Showstopper Package</h3>
+                <p className="text-base text-muted-foreground">
+                  A full-property holiday lighting experience designed for dramatic visual impact.
+                </p>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-3 mb-8">
+                  <div className="flex items-start">
+                    <CheckCircle className="text-primary mr-3 mt-1 flex-shrink-0" size={20} />
+                    <span className="text-muted-foreground">Full roofline lighting (front, sides, and rear)</span>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="text-primary mr-3 mt-1 flex-shrink-0" size={20} />
+                    <span className="text-muted-foreground">Full landscape glow: bushes, shrubs, and front features</span>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="text-primary mr-3 mt-1 flex-shrink-0" size={20} />
+                    <span className="text-muted-foreground">One wrapped tree up to 12–15 ft</span>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="text-primary mr-3 mt-1 flex-shrink-0" size={20} />
+                    <span className="text-muted-foreground">Custom lighting design mockup</span>
+                  </div>
+                </div>
+                <Link to="/quote">
+                  <Button className="w-full bg-primary hover:bg-primary-light text-primary-foreground shadow-elegant">
+                    Request This Package
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* OU Add-On */}
+          <Card className="border-2 border-primary shadow-elegant max-w-4xl mx-auto mb-12">
+            <CardHeader className="text-center">
+              <div className="text-6xl mb-4">❤️</div>
+              <h3 className="text-3xl font-serif mb-2">OU Sooner Add-On</h3>
+              <p className="text-base text-muted-foreground">
+                A crimson & cream festive upgrade. Can be added to any package.
+              </p>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-3 mb-6">
+                <div className="flex items-start">
+                  <CheckCircle className="text-primary mr-3 mt-1 flex-shrink-0" size={20} />
+                  <span className="text-muted-foreground">Red & white LED roofline accents or full-color swap</span>
+                </div>
+                <div className="flex items-start">
+                  <CheckCircle className="text-primary mr-3 mt-1 flex-shrink-0" size={20} />
+                  <span className="text-muted-foreground">OU-themed wreath</span>
+                </div>
+              </div>
+              <Link to="/quote">
+                <Button className="w-full bg-primary hover:bg-primary-light text-primary-foreground">
+                  Add to Your Package
+                </Button>
+              </Link>
+            </CardContent>
+          </Card>
+
+          <div className="text-center">
+            <Link to="/packages">
+              <Button variant="outline" size="lg" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground text-lg px-8 py-6">
+                View Complete Package Details
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works Section */}
+      <section className="py-24 bg-muted">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-foreground">
