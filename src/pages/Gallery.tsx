@@ -1,39 +1,43 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
+import rooflineElegance from "@/assets/roofline_elegance.png";
+import treeWrapping from "@/assets/tree_wrapping.png";
+import landscapeLighting from "@/assets/landscape_lighting.png";
+import premiumWreaths from "@/assets/premium_wreaths.png";
+import ouSpirit from "@/assets/ou_spirit.png";
 
 const Gallery = () => {
-  // Placeholder for gallery images - in production, these would be actual project photos
   const galleryCategories = [
     {
       title: "Roofline Elegance",
       description: "Clean, architectural roofline displays",
-      count: 8
+      count: 8,
+      image: rooflineElegance
     },
     {
       title: "Tree Wrapping",
       description: "Professionally wrapped trees",
-      count: 6
+      count: 6,
+      image: treeWrapping
     },
     {
       title: "Landscape Lighting",
       description: "Beautiful bush and shrub accents",
-      count: 7
+      count: 7,
+      image: landscapeLighting
     },
     {
       title: "Premium Wreaths",
       description: "Custom wreath installations",
-      count: 5
+      count: 5,
+      image: premiumWreaths
     },
     {
       title: "OU Spirit",
       description: "Crimson and cream displays",
-      count: 4
-    },
-    {
-      title: "Full Property",
-      description: "Complete home transformations",
-      count: 10
+      count: 4,
+      image: ouSpirit
     }
   ];
 
@@ -58,14 +62,16 @@ const Gallery = () => {
                 key={index}
                 className="overflow-hidden shadow-elegant hover:shadow-luxury transition-all duration-300 group cursor-pointer"
               >
-                <div className="aspect-[4/3] bg-gradient-to-br from-muted to-muted-foreground/20 relative overflow-hidden">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center p-6">
-                      <div className="text-6xl mb-4 group-hover:scale-110 transition-transform">✨</div>
-                      <p className="text-muted-foreground text-sm">{category.count} projects</p>
-                    </div>
-                  </div>
+                <div className="aspect-[4/3] relative overflow-hidden">
+                  <img 
+                    src={category.image} 
+                    alt={category.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
                   <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/10 transition-colors" />
+                  <div className="absolute bottom-4 right-4 bg-background/90 backdrop-blur-sm px-3 py-1 rounded-full">
+                    <p className="text-muted-foreground text-sm font-medium">{category.count} projects</p>
+                  </div>
                 </div>
                 <div className="p-6">
                   <h3 className="text-2xl font-semibold mb-2 text-foreground group-hover:text-primary transition-colors">
