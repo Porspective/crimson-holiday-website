@@ -12,31 +12,31 @@ const Gallery = () => {
     {
       title: "Roofline Elegance",
       description: "Clean, architectural roofline displays",
-      count: 8,
+      count: 45,
       image: rooflineElegance
     },
     {
       title: "Tree Wrapping",
       description: "Professionally wrapped trees",
-      count: 6,
+      count: 32,
       image: treeWrapping
     },
     {
       title: "Landscape Lighting",
       description: "Beautiful bush and shrub accents",
-      count: 7,
+      count: 38,
       image: landscapeLighting
     },
     {
       title: "Premium Wreaths",
       description: "Custom wreath installations",
-      count: 5,
+      count: 28,
       image: premiumWreaths
     },
     {
       title: "OU Spirit",
       description: "Crimson and cream displays",
-      count: 4,
+      count: 15,
       image: ouSpirit
     }
   ];
