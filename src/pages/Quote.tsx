@@ -40,9 +40,41 @@ const Quote = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Quote request submitted:", formData);
+    
+    // Format email body
+    const emailBody = `
+NEW QUOTE REQUEST
+
+CONTACT INFORMATION
+Name: ${formData.fullName}
+Phone: ${formData.phone}
+Email: ${formData.email}
+
+PROPERTY INFORMATION
+Address: ${formData.address}
+City: ${formData.city}
+Neighborhood: ${formData.neighborhood}
+Home Size: ${formData.homeSize}
+
+LIGHTING PREFERENCES
+Areas to Light: ${formData.areasToLight.join(', ') || 'None selected'}
+Preferred Package: ${formData.preferredPackage}
+Add-ons: ${formData.addOns.join(', ') || 'None selected'}
+Lighting Style: ${formData.lightingStyle}
+Installation Timing: ${formData.installationTiming}
+
+ADDITIONAL NOTES
+${formData.additionalNotes || 'None'}
+    `.trim();
+
+    // Create mailto link
+    const mailtoLink = `mailto:porter.j.robertson@gmail.com?subject=Holiday Lighting Quote Request - ${formData.fullName}&body=${encodeURIComponent(emailBody)}`;
+    
+    // Open email client
+    window.location.href = mailtoLink;
+    
     setSubmitted(true);
-    toast.success("Quote request received! We'll contact you within 24 hours.");
+    toast.success("Opening your email client to send the quote request!");
   };
 
   if (submitted) {
