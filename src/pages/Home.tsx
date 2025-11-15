@@ -37,7 +37,7 @@ const Home = () => {
                 </Button>
               </Link>
               <Link to="/packages">
-                <Button size="lg" variant="outline" className="border-2 border-gold text-background hover:bg-gold hover:text-foreground text-lg px-8 py-6">
+                <Button size="lg" className="bg-gold hover:bg-gold-dark text-foreground border-2 border-gold text-lg px-8 py-6 shadow-elegant">
                   View Our Packages
                 </Button>
               </Link>
@@ -46,84 +46,8 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
-      <section className="py-24 bg-muted">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-foreground">
-              Why Choose <span className="text-primary">Crimson Holiday Co.</span>
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              We deliver premium holiday lighting experiences with meticulous attention to detail
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="border-none shadow-elegant hover:shadow-luxury transition-all duration-300">
-              <CardContent className="p-8">
-                <CheckCircle className="text-primary mb-4" size={48} />
-                <h3 className="text-2xl font-semibold mb-3 text-foreground">Premium Commercial-Grade LED</h3>
-                <p className="text-muted-foreground">
-                  Professional C9 LED systems that outshine residential options with brilliant, consistent lighting.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-none shadow-elegant hover:shadow-luxury transition-all duration-300">
-              <CardContent className="p-8">
-                <Sparkles className="text-gold mb-4" size={48} />
-                <h3 className="text-2xl font-semibold mb-3 text-foreground">Custom-Cut Installation</h3>
-                <p className="text-muted-foreground">
-                  Every strand perfectly measured and cut to fit your home's unique architecture.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-none shadow-elegant hover:shadow-luxury transition-all duration-300">
-              <CardContent className="p-8">
-                <CheckCircle className="text-primary mb-4" size={48} />
-                <h3 className="text-2xl font-semibold mb-3 text-foreground">Safe, Non-Invasive</h3>
-                <p className="text-muted-foreground">
-                  Professional mounting techniques that protect your property while creating stunning displays.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-none shadow-elegant hover:shadow-luxury transition-all duration-300">
-              <CardContent className="p-8">
-                <Package className="text-gold mb-4" size={48} />
-                <h3 className="text-2xl font-semibold mb-3 text-foreground">Full Service Care</h3>
-                <p className="text-muted-foreground">
-                  Complete takedown and secure off-season storage — zero hassle for you.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-none shadow-elegant hover:shadow-luxury transition-all duration-300">
-              <CardContent className="p-8">
-                <Sparkles className="text-primary mb-4" size={48} />
-                <h3 className="text-2xl font-semibold mb-3 text-foreground">Free Design Mockups</h3>
-                <p className="text-muted-foreground">
-                  Visualize your custom lighting design before installation begins.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-none shadow-elegant hover:shadow-luxury transition-all duration-300">
-              <CardContent className="p-8">
-                <CheckCircle className="text-gold mb-4" size={48} />
-                <h3 className="text-2xl font-semibold mb-3 text-foreground">OU Student Operated</h3>
-                <p className="text-muted-foreground">
-                  Local, reliable, and committed to excellence in every installation.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       {/* Packages Section */}
-      <section className="py-24 bg-background">
+      <section className="py-24 bg-muted">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-foreground">
@@ -283,6 +207,82 @@ const Home = () => {
                 View Complete Package Details
               </Button>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-foreground">
+              Why Choose <span className="text-primary">Crimson Holiday Co.</span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              We deliver premium holiday lighting experiences with meticulous attention to detail
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="border-none shadow-elegant hover:shadow-luxury transition-all duration-300">
+              <CardContent className="p-8">
+                <CheckCircle className="text-primary mb-4" size={48} />
+                <h3 className="text-2xl font-semibold mb-3 text-foreground">Premium Commercial-Grade LED</h3>
+                <p className="text-muted-foreground">
+                  Professional C9 LED systems that outshine residential options with brilliant, consistent lighting.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-none shadow-elegant hover:shadow-luxury transition-all duration-300">
+              <CardContent className="p-8">
+                <Sparkles className="text-gold mb-4" size={48} />
+                <h3 className="text-2xl font-semibold mb-3 text-foreground">Custom-Cut Installation</h3>
+                <p className="text-muted-foreground">
+                  Every strand perfectly measured and cut to fit your home's unique architecture.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-none shadow-elegant hover:shadow-luxury transition-all duration-300">
+              <CardContent className="p-8">
+                <CheckCircle className="text-primary mb-4" size={48} />
+                <h3 className="text-2xl font-semibold mb-3 text-foreground">Safe, Non-Invasive</h3>
+                <p className="text-muted-foreground">
+                  Professional mounting techniques that protect your property while creating stunning displays.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-none shadow-elegant hover:shadow-luxury transition-all duration-300">
+              <CardContent className="p-8">
+                <Package className="text-gold mb-4" size={48} />
+                <h3 className="text-2xl font-semibold mb-3 text-foreground">Full Service Care</h3>
+                <p className="text-muted-foreground">
+                  Complete takedown and secure off-season storage — zero hassle for you.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-none shadow-elegant hover:shadow-luxury transition-all duration-300">
+              <CardContent className="p-8">
+                <Sparkles className="text-primary mb-4" size={48} />
+                <h3 className="text-2xl font-semibold mb-3 text-foreground">Free Design Mockups</h3>
+                <p className="text-muted-foreground">
+                  Visualize your custom lighting design before installation begins.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-none shadow-elegant hover:shadow-luxury transition-all duration-300">
+              <CardContent className="p-8">
+                <CheckCircle className="text-gold mb-4" size={48} />
+                <h3 className="text-2xl font-semibold mb-3 text-foreground">OU Student Operated</h3>
+                <p className="text-muted-foreground">
+                  Local, reliable, and committed to excellence in every installation.
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
