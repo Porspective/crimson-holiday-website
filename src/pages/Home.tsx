@@ -37,7 +37,7 @@ const Home = () => {
                 </Button>
               </Link>
               <Link to="/packages">
-                <Button size="lg" className="bg-gold hover:bg-gold-dark text-foreground border-2 border-gold text-lg px-8 py-6 shadow-elegant">
+                <Button size="lg" className="bg-gold hover:bg-gold/90 text-foreground shadow-luxury text-lg px-8 py-6">
                   View Our Packages
                 </Button>
               </Link>

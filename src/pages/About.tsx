@@ -25,13 +25,16 @@ const About = () => {
                 <h2 className="text-3xl font-serif font-bold mb-6 text-foreground">Our Story</h2>
                 <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
                   <p>
-                    Crimson Holiday Co. is an OU student-operated premium holiday lighting service dedicated to transforming homes into stunning winter wonderlands. We combine youthful energy and attention to detail with professional-grade equipment and techniques.
+                    Crimson Holiday Co. is a locally operated holiday lighting service founded and run by University of Oklahoma students who take pride in delivering clean, professional, and beautifully designed lighting displays. What started as a simple idea quickly grew into a full-service operation built on reliability, craftsmanship, and a genuine passion for making homes look incredible during the holiday season.
                   </p>
                   <p>
-                    What sets us apart is our commitment to excellence in every installation. We don't just hang lights—we design custom lighting experiences that enhance your home's architecture and create lasting holiday memories.
+                    We don't believe in throwing up generic light strands and calling it a day. Every installation is thoughtfully planned and tailored to your home's unique architecture. Our focus is on clean lines, balanced lighting, and a design that elevates your curb appeal while capturing the magic of the season.
                   </p>
                   <p>
-                    Our team uses only premium commercial-grade LED C9 systems, the same professional equipment used by high-end lighting companies. Every strand is custom-cut to fit your home perfectly, and our safe, non-invasive mounting techniques protect your property while creating stunning displays.
+                    To ensure the highest quality, we use the same premium commercial-grade LED C9 systems trusted by professional lighting companies across the country. Each strand is custom-cut to your home for a perfect fit, and our non-invasive mounting techniques keep your home protected while allowing for a crisp, professional finish.
+                  </p>
+                  <p>
+                    As OU students, we're committed to earning your trust through hard work, clear communication, and attention to detail. Our goal is simple: to give you a stunning, hassle-free holiday display you can enjoy all season long—without ever lifting a ladder.
                   </p>
                 </div>
               </CardContent>
