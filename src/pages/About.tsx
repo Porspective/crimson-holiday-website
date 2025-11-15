@@ -34,7 +34,7 @@ const About = () => {
                     To ensure the highest quality, we use the same premium commercial-grade LED C9 systems trusted by professional lighting companies across the country. Each strand is custom-cut to your home for a perfect fit, and our non-invasive mounting techniques keep your home protected while allowing for a crisp, professional finish.
                   </p>
                   <p>
-                    As OU students, we're committed to earning your trust through hard work, clear communication, and attention to detail. Our goal is simple: to give you a stunning, hassle-free holiday display you can enjoy all season long—without ever lifting a ladder.
+                    As OU students, we're committed to earning your trust through hard work, clear communication, and attention to detail. Our goal is simple: to give you a stunning, hassle-free holiday display you can enjoy all season long without ever lifting a ladder.
                   </p>
                 </div>
               </CardContent>

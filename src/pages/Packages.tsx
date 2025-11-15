@@ -25,7 +25,7 @@ const Packages = () => {
     {
       icon: "⭐",
       name: "Signature Package",
-      description: "Our most popular package—balanced, curated, and designed to enhance your home from multiple viewing angles.",
+      description: "Our most popular package balanced, curated, and designed to enhance your home from multiple viewing angles.",
       features: [
         "Front + side roofline lighting",
         "Premium commercial-grade LED C9 bulbs",
