@@ -28,7 +28,7 @@ const Home = () => {
               Luxury Holiday Lighting, <span className="text-gold">Fully Custom</span> for Your Home.
             </h1>
             <p className="text-xl md:text-2xl text-background/90 mb-8">
-              Premium commercial-grade LED designs, professional installation, takedown & storage — serving Norman, Moore, and OKC.
+              Premium commercial-grade LED designs, professional installation, takedown & storage serving Norman, Moore, and OKC.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/quote">
@@ -106,7 +106,7 @@ const Home = () => {
                 <div className="text-6xl mb-4">⭐</div>
                 <h3 className="text-3xl font-serif mb-2">Signature Package</h3>
                 <p className="text-base text-muted-foreground">
-                  Our most popular package—balanced, curated, and designed to enhance your home from multiple viewing angles.
+                  Our most popular package balanced, curated, and designed to enhance your home from multiple viewing angles.
                 </p>
               </CardHeader>
               <CardContent>
@@ -259,7 +259,7 @@ const Home = () => {
                 <Package className="text-gold mb-4" size={48} />
                 <h3 className="text-2xl font-semibold mb-3 text-foreground">Full Service Care</h3>
                 <p className="text-muted-foreground">
-                  Complete takedown and secure off-season storage — zero hassle for you.
+                  Complete takedown and secure off-season storage, zero hassle for you.
                 </p>
               </CardContent>
             </Card>
