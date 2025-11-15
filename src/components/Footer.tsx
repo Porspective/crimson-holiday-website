@@ -18,9 +18,9 @@ const Footer = () => {
                 <Phone size={18} className="mr-2" />
                 Contact for phone
               </a>
-              <a href="mailto:info@crimsonholidayco.com" className="flex items-center hover:text-gold transition-colors">
+              <a href="mailto:porter.j.robertson@gmail.com" className="flex items-center hover:text-gold transition-colors">
                 <Mail size={18} className="mr-2" />
-                info@crimsonholidayco.com
+                porter.j.robertson@gmail.com
               </a>
             </div>
           </div>
