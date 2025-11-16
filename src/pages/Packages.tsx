@@ -144,6 +144,38 @@ const Packages = () => {
             </CardContent>
           </Card>
 
+          {/* OKC Thunder Add-On */}
+          <Card className="border-2 border-primary shadow-elegant max-w-4xl mx-auto mt-8">
+            <CardHeader className="text-center">
+              <div className="text-6xl mb-4">⚡</div>
+              <CardTitle className="text-3xl font-serif mb-2">OKC Thunder Add-On</CardTitle>
+              <CardDescription className="text-base">
+                Show your Thunder pride with orange, blue, and black lighting.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-3 mb-6">
+                <div className="flex items-start">
+                  <CheckCircle className="text-primary mr-3 mt-1 flex-shrink-0" size={20} />
+                  <span className="text-muted-foreground">Orange, blue & black LED roofline accents or full-color swap</span>
+                </div>
+                <div className="flex items-start">
+                  <CheckCircle className="text-primary mr-3 mt-1 flex-shrink-0" size={20} />
+                  <span className="text-muted-foreground">Oklahoma City Thunder-themed wreath</span>
+                </div>
+                <div className="flex items-start">
+                  <CheckCircle className="text-primary mr-3 mt-1 flex-shrink-0" size={20} />
+                  <span className="text-muted-foreground">Can be added to any package</span>
+                </div>
+              </div>
+              <Link to="/quote">
+                <Button className="w-full bg-primary hover:bg-primary-light text-primary-foreground">
+                  Add to Your Package
+                </Button>
+              </Link>
+            </CardContent>
+          </Card>
+
           <div className="text-center mt-16">
             <p className="text-xl text-muted-foreground mb-6">
               Not sure which package is right for you?
