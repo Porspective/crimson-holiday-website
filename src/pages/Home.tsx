@@ -201,6 +201,34 @@ const Home = () => {
             </CardContent>
           </Card>
 
+          {/* OKC Thunder Add-On */}
+          <Card className="border-2 border-primary shadow-elegant max-w-4xl mx-auto mb-12">
+            <CardHeader className="text-center">
+              <div className="text-6xl mb-4">⚡</div>
+              <h3 className="text-3xl font-serif mb-2">OKC Thunder Add-On</h3>
+              <p className="text-base text-muted-foreground">
+                Show your Thunder pride with orange, blue, and black lighting. Can be added to any package.
+              </p>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-3 mb-6">
+                <div className="flex items-start">
+                  <CheckCircle className="text-primary mr-3 mt-1 flex-shrink-0" size={20} />
+                  <span className="text-muted-foreground">Orange, blue & black LED roofline accents or full-color swap</span>
+                </div>
+                <div className="flex items-start">
+                  <CheckCircle className="text-primary mr-3 mt-1 flex-shrink-0" size={20} />
+                  <span className="text-muted-foreground">Oklahoma City Thunder-themed wreath</span>
+                </div>
+              </div>
+              <Link to="/quote">
+                <Button className="w-full bg-primary hover:bg-primary-light text-primary-foreground">
+                  Add to Your Package
+                </Button>
+              </Link>
+            </CardContent>
+          </Card>
+
           <div className="text-center">
             <Link to="/packages">
               <Button variant="outline" size="lg" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground text-lg px-8 py-6">
