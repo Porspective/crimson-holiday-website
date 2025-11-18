@@ -28,6 +28,7 @@ const Quote = () => {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleCheckboxChange = (field: 'areasToLight' | 'addOns', value: string, checked: boolean) => {
     setFormData(prev => ({
@@ -38,43 +39,49 @@ const Quote = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
     
-    // Format email body
-    const emailBody = `
-NEW QUOTE REQUEST
+    try {
+      // Replace with your Formspree form ID
+      const formspreeEndpoint = "https://formspree.io/f/YOUR_FORM_ID";
+      
+      const response = await fetch(formspreeEndpoint, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          _subject: `Holiday Lighting Quote Request - ${formData.fullName}`,
+          fullName: formData.fullName,
+          phone: formData.phone,
+          email: formData.email,
+          address: formData.address,
+          city: formData.city,
+          neighborhood: formData.neighborhood,
+          homeSize: formData.homeSize,
+          areasToLight: formData.areasToLight.join(', ') || 'None selected',
+          preferredPackage: formData.preferredPackage,
+          addOns: formData.addOns.join(', ') || 'None selected',
+          lightingStyle: formData.lightingStyle,
+          installationTiming: formData.installationTiming,
+          additionalNotes: formData.additionalNotes || 'None',
+        }),
+      });
 
-CONTACT INFORMATION
-Name: ${formData.fullName}
-Phone: ${formData.phone}
-Email: ${formData.email}
-
-PROPERTY INFORMATION
-Address: ${formData.address}
-City: ${formData.city}
-Neighborhood: ${formData.neighborhood}
-Home Size: ${formData.homeSize}
-
-LIGHTING PREFERENCES
-Areas to Light: ${formData.areasToLight.join(', ') || 'None selected'}
-Preferred Package: ${formData.preferredPackage}
-Add-ons: ${formData.addOns.join(', ') || 'None selected'}
-Lighting Style: ${formData.lightingStyle}
-Installation Timing: ${formData.installationTiming}
-
-ADDITIONAL NOTES
-${formData.additionalNotes || 'None'}
-    `.trim();
-
-    // Create mailto link
-    const mailtoLink = `mailto:porter.j.robertson@gmail.com?subject=Holiday Lighting Quote Request - ${formData.fullName}&body=${encodeURIComponent(emailBody)}`;
-    
-    // Open email client
-    window.location.href = mailtoLink;
-    
-    setSubmitted(true);
-    toast.success("Opening your email client to send the quote request!");
+      if (response.ok) {
+        setSubmitted(true);
+        toast.success("Quote request sent successfully!");
+      } else {
+        toast.error("Failed to send quote request. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      toast.error("An error occurred. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (submitted) {
@@ -336,9 +343,10 @@ ${formData.additionalNotes || 'None'}
                 <Button 
                   type="submit" 
                   size="lg"
+                  disabled={isSubmitting}
                   className="w-full bg-primary hover:bg-primary-light text-primary-foreground shadow-luxury text-lg py-6"
                 >
-                  Request My Custom Quote
+                  {isSubmitting ? "Sending..." : "Request My Custom Quote"}
                 </Button>
               </form>
             </CardContent>
