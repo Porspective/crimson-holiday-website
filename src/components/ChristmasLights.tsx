@@ -16,9 +16,9 @@ const ChristmasLights = () => {
   }));
 
   return (
-    <div className="absolute bottom-0 left-0 right-0 h-6 pointer-events-none overflow-hidden">
+    <div className="absolute top-20 left-0 right-0 h-8 pointer-events-none overflow-visible z-20">
       {/* Wire */}
-      <div className="absolute top-0 left-0 right-0 h-0.5 bg-foreground/20" />
+      <div className="absolute top-0 left-0 right-0 h-0.5 bg-gray-800/60" />
       
       {/* Lights */}
       <div className="flex justify-around items-start h-full px-4">
