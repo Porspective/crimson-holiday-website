@@ -31,7 +31,7 @@ const ChristmasLights = () => {
             
             {/* Bulb */}
             <div
-              className="w-5 h-7 rounded-b-full animate-twinkle relative"
+              className="w-5 h-8 animate-twinkle relative"
               style={{
                 backgroundColor: bulb.color,
                 animationDelay: `${bulb.delay}s`,
@@ -41,8 +41,8 @@ const ChristmasLights = () => {
                   inset 0 -2px 4px rgba(0,0,0,0.3),
                   inset 2px 0 4px rgba(255,255,255,0.3)
                 `,
-                borderTopLeftRadius: '20%',
-                borderTopRightRadius: '20%',
+                borderRadius: '50% 50% 50% 50% / 60% 60% 40% 40%',
+                clipPath: 'ellipse(50% 45% at 50% 40%)',
               }}
             >
               {/* Highlight */}
