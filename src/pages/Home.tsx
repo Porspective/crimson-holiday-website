@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { CheckCircle, Sparkles, Calendar, Package } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ChristmasLights from "@/components/ChristmasLights";
 import heroImage from "@/assets/hero-home.jpg";
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
       
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
+        <ChristmasLights />
         <div className="absolute inset-0 z-0">
           <img 
             src={heroImage} 
